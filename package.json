@@ -1,0 +1,27 @@
+{
+  "name": "web-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "gulp test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "author": "Tango Inc.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "configman": "^1.0.2",
+    "express": "^4.14.0",
+    "http-status": "^0.2.3",
+    "winston": "^2.2.0",
+    "yargs": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
