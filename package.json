@@ -1,0 +1,21 @@
+{
+  "name": "web-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "worker.js",
+  "dependencies": {
+    "configman": "^1.0.2",
+    "winston": "^2.2.0",
+    "yargs": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "author": "",
+  "license": "ISC"
+}
