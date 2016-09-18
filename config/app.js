@@ -8,7 +8,8 @@ module.exports = {
     showStackTrace: true
   },
   test: {
-    port: 9888
+    port: 9888,
+    loggingLevel: 'off'
   },
   production: {
     showStackTrace: false
