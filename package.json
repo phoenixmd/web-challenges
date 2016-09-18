@@ -2,7 +2,7 @@
   "name": "web-challenges",
   "version": "1.0.0",
   "description": "",
-  "main": "worker.js",
+  "main": "index.js",
   "dependencies": {
     "configman": "^1.0.2",
     "winston": "^2.2.0",
@@ -16,7 +16,8 @@
     "gulp-mocha": "^3.0.1"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
