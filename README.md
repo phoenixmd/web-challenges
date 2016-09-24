@@ -13,16 +13,12 @@ This full stack challenge invites you to create a full registration/authenticati
   - Register
   - Login
   - Logout
-- Frontend compatibility : Internet Explorer 10+
 
 ## Technical constraints
 
 - Do NOT use [`passport`](http://passportjs.org/) or any other authentication library
-- Storage must be one of :
-  - MySQL (using [`Sequelize`](http://docs.sequelizejs.com/en/v3/))
-  - MongoDB (using [`Mongoose`](http://mongoosejs.com/))
-- Server is built using Node.js and ES6
-- Frontend is built using [`React.js`](https://facebook.github.io/react/). You can use any of the implementations that you want, however [`Redux`](http://redux.js.org/) is preferred
+- Storage must be : MySQL (using [`Sequelize`](http://docs.sequelizejs.com/en/v3/))
+- Server is built using Node.js and ES6 
 
 ## Setup
 
@@ -60,9 +56,12 @@ You are free to modify this setup or even start from scratch with your preferred
 
 ## Expectations
 
-- The UI/UX/design is left to your total freedom and will be evaluated as an important part of this challenge
+- The UI/UX is not very important for this project and will only be used to test your results
 - The quality of the code will be finely examined, particularly file structures, data structures, separation of concerns, standard best practices, respect of the DRY concept and overall clearness/cleanness of the code are an important part of this challenge
 - Testing is expected to be part of your everyday practices and will count on your performance
+- Respect of web standards such as status codes and proper HTTP verbs is important
+- Usage of latest ES6 features, and particularly classes is highly encouraged
+- Usage of Promises instead of callback is a bonus
  
 ## Questions
  
@@ -70,7 +69,7 @@ You are free to modify this setup or even start from scratch with your preferred
  
 ## Estimated time to completion
  
- The expected time to completion for this exercise is sized to 5 hours. However, and if you find yourself spending a lot more time than expected, we do not require you to fulfill the full exercise in order to submit it. Feel free to send us whatever you have been able to complete along with how much time you've spent on it and we will try to get the best out of what you did. 
+ The expected time to completion for this exercise is sized to 3 hours. However, and if you find yourself spending a lot more time than expected, we do not require you to fulfill the full exercise in order to submit it. Feel free to send us whatever you have been able to complete along with how much time you've spent on it and we will try to get the best out of what you did. 
 
 
 
