@@ -17,6 +17,7 @@ app.set('view engine', 'jsx');
 
 require('./routes/health')(app);
 require('./routes/index')(app);
+require('./routes/users')(app);
 
 app.use(notFound());
 app.use(errorHandler({ showStackTrace: Config.get('app').showStackTrace }));
