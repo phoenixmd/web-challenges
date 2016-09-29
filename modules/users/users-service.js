@@ -25,7 +25,15 @@ const verifyPassword = (password, user)=> {
 
 const addUser = (user) => {
     return validateUser(user)
+        .then(UsersModel.findByEmail.bind(null,user.email))
+        .then((existingUser)=>{
+            if (existingUser) {
+                return Promise.reject(new TangoError("Email already exists ", "VALIDATION_ERROR", HTTPStatus.BAD_REQUEST));
+            }
+            return user;
+        })
         .then(UsersModel.create)
+    
 };
 const authenticate = (user)=> {
     return validateUser(user)

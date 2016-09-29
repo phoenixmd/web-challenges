@@ -4,7 +4,7 @@ const HTTPStatus = require('http-status');
 const addUser = (req, res, next) => {
     return usersService.addUser(req.body)
         .then((data)=> {
-            res.send(data)
+            return res.send(HTTPStatus.OK, {email : data.email})
         })
         .catch(next)
 };
