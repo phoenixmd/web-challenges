@@ -6,7 +6,7 @@ const Promise = require('bluebird');
 const validator = require('validator');
 const UsersModel = require('../../db/models/users-model');
 const HTTPStatus = require('http-status');
-
+const utils = require('../../utils/utils');
 const validateUser = (user) => {
     if (!validator.isEmail(user.email)) {
         return Promise.reject(new TangoError("Invalid email","VALIDATION_ERROR",HTTPStatus.BAD_REQUEST ));
@@ -17,7 +17,10 @@ const validateUser = (user) => {
     return Promise.resolve(user);
 };
 const verifyPassword = (password, user)=> {
-
+    if(!user || (utils.encryptPassword(password, user.salt) !== user.password)){
+        return Promise.reject(new TangoError("Authentication Failed","AUTHENTICATION_ERROR",HTTPStatus.UNAUTHORIZED))
+    }
+    return Promise.resolve(user);
 };
 
 const addUser = (user) => {
@@ -27,11 +30,9 @@ const addUser = (user) => {
 const authenticate = (user)=> {
     return validateUser(user)
         .then((user)=> {
-            UsersModel.findByEmail(user.email)
+           return UsersModel.findByEmail(user.email);
         })
         .then(verifyPassword.bind(null, user.password))
-
-
 };
 module.exports = {
     addUser: addUser,

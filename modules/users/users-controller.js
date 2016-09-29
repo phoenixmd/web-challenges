@@ -32,7 +32,7 @@ const  logout = function (req, res, next) {
         if(err){
             return next(err);
         }
-        return res.send(HTTPStatus.OK,{})
+        return res.send(HTTPStatus.OK,{mesage : "successfully logged out"})
     });
 }
 module.exports = {
