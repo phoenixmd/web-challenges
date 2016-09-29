@@ -6,6 +6,7 @@ const Logger = require('../modules/logger')('error-handler');
 
 module.exports = ({ showStackTrace = false }) => {
   return (err, req, res, next) => {
+    console.log(err.statusCode);
     const statusCode = err.status || err.statusCode || HTTPStatus.INTERNAL_SERVER_ERROR;
     const trace = showStackTrace && err.stack ? err.stack : undefined;
     
