@@ -1,0 +1,14 @@
+.idea/
+.vscode/
+
+node_modules/
+migrations/
+seeders/
+
+.DS_Store
+*.log
+
+coverage/
+
+.npm-debug.log
+
