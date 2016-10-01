@@ -5,6 +5,7 @@ node_modules/
 migrations/
 seeders/
 
+
 .DS_Store
 *.log
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Authentication challenge
 
 ## Goal
@@ -73,3 +74,10 @@ You are free to modify this setup or even start from scratch with your preferred
 
 
 
+=======
+# Web challenges
+
+## Authentication challenge
+
+Complete registration/authentication workflow. See https://github.com/phoenixmd/web-challenges/tree/authentication.
+>>>>>>> fd841521e626946b5e3b981d78077225b20f1ded
